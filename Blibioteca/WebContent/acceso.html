@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>		<!--Para indicar que es html5-->
+<html>
+	<head>	<!--Informacion NO visible en el navegador-->
+		<meta charset="iso-8559-1"/>	<!--caracteres que se emplean-->
+		<meta name="description" content="ACADEMIA PEPITO"/>		<!--Descripcion acerca de la tematica de la web, para que los buscadores la categorize-->
+		<meta name="keywords" content="clases particulares, academia, estudio, universidad"/>	
+		
+		<title>ACADEMIA PEPITO - ACCESO</title>
+		<link rel="icon" type="image/png" href="imagenes/iconoAcademia.ico" />	<!--Icono de favoritos. El que se muestra en la pesataña del navegador-->		
+		<link rel="stylesheet" href="hojadeestilo.css"/>	<!--Enlaza la hoja de estilo css-->
+		<script src="javaScript.js"></script>				<!--Enlaza el archivo JavaScript-->
+	</head>
+
+	<body>
+		<header id="cabecera">	<!--Cabecera-->
+			<h1 id="titulo">ACADEMIA PEPITO</h1>
+		</header>
+
+		<nav>	<!--Barra de navegacion-->
+			<ul>
+				<li><a href = "index.html">Inicio</a></li>
+				<li><a href = "acceso.html">Acceso</a></li>
+				<li><a href = "quienesSomos.html">Quienes Somos</a></li>
+				<li><a href = "solicitarInformacion.html"> Solicitar informacion</a></li>
+			</ul>
+		</nav>
+
+		<section id = "subtitulo">
+			<h2>Acceso</h2>
+		</section>
+
+		<section id = "formAcceso">
+			<form name = "formDeAcceso" id = "formDeAcceso" method = "post" autocomplete = "off"> <!--Con autocomplete off no guarda lo introducido. con method="post", no se muestra en la url los datos introducidos. Si ponemos method="get", se muestran en la url-->
+				<fieldset>				
+					<legend>Login</legend>
+					<label for "usuario">Usuario:</label> &nbsp; <input type = "text" name = "usuario" placeholder = "Introduce usuario" required><br>
+					<label for "contrasena">Contrasena:</label> &nbsp; <input type = "password" name = "contrasena" placeholder = "Min 6 caracteres" minlength="6" required>
+			</fieldset>
+			<input type = "submit" value = "Enviar"/>
+			<input type = "reset" value = "Borrar"/><br><br>
+			</form>
+		</section> 
+			
+		<footer id=piePag>	<!--Pie de pagina-->
+			2017 - <small>Todos los derechos reservados &copy </small>	<!--small se usa para marcar textos legales-->
+			<address> Santurtzi, Bizkaia 48920</adress>	<!--adress para indicar direcciones-->
+		</footer>
+	</body>
